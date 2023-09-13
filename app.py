@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # Set page configuration
 st.set_page_config(
@@ -21,8 +21,8 @@ def main():
         pandas_cheat_sheet()
     elif selected_library == 'NumPy':
         numpy_cheat_sheet()
-    elif selected_library == 'Matplotlib':
-        matplotlib_cheat_sheet()
+    # elif selected_library == 'Matplotlib':
+    #     matplotlib_cheat_sheet()
     # elif selected_library == 'Scikit-learn':
     #     scikit_learn_cheat_sheet()
     # elif selected_library == 'Seaborn':
