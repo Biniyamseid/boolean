@@ -23,14 +23,14 @@ def main():
         numpy_cheat_sheet()
     elif selected_library == 'Matplotlib':
         matplotlib_cheat_sheet()
-    elif selected_library == 'Scikit-learn':
-        scikit_learn_cheat_sheet()
-    elif selected_library == 'Seaborn':
-        seaborn_cheat_sheet()
-    elif selected_library == 'Plotly':
-        plotly_cheat_sheet()
-    elif selected_library == 'Tensorflow':
-        tensorflow_cheat_sheet()
+    # elif selected_library == 'Scikit-learn':
+    #     scikit_learn_cheat_sheet()
+    # elif selected_library == 'Seaborn':
+    #     seaborn_cheat_sheet()
+    # elif selected_library == 'Plotly':
+    #     plotly_cheat_sheet()
+    # elif selected_library == 'Tensorflow':
+    #     tensorflow_cheat_sheet()
     
 
 
@@ -98,76 +98,76 @@ def numpy_cheat_sheet():
     st.code("np.min(arr)  # Minimum value")
     st.code("np.sum(arr)  # Sum of elements")
 
-# Add a section for scikit-learn Cheat Sheet
-def scikit_learn_cheat_sheet():
-    st.header('scikit-learn Cheat Sheet')
+# # Add a section for scikit-learn Cheat Sheet
+# def scikit_learn_cheat_sheet():
+#     st.header('scikit-learn Cheat Sheet')
 
-    # Add scikit-learn content here
-    st.write("scikit-learn is a machine learning library for Python.")
-    st.code("from sklearn.model_selection import train_test_split")
-    st.write("Split data into training and testing sets:")
-    st.code("X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)")
+#     # Add scikit-learn content here
+#     st.write("scikit-learn is a machine learning library for Python.")
+#     st.code("from sklearn.model_selection import train_test_split")
+#     st.write("Split data into training and testing sets:")
+#     st.code("X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)")
 
-    # Common machine learning tasks
-    st.subheader('Common Machine Learning Tasks')
-    st.write("Explore common machine learning tasks and techniques.")
-    st.code("from sklearn.linear_model import LinearRegression")
-    st.code("model = LinearRegression()")
-    st.code("model.fit(X_train, y_train)  # Train the model")
-    st.code("y_pred = model.predict(X_test)  # Make predictions")
+#     # Common machine learning tasks
+#     st.subheader('Common Machine Learning Tasks')
+#     st.write("Explore common machine learning tasks and techniques.")
+#     st.code("from sklearn.linear_model import LinearRegression")
+#     st.code("model = LinearRegression()")
+#     st.code("model.fit(X_train, y_train)  # Train the model")
+#     st.code("y_pred = model.predict(X_test)  # Make predictions")
 
-# Add a section for seaborn Cheat Sheet
-def seaborn_cheat_sheet():
-    st.header('Seaborn Cheat Sheet')
+# # Add a section for seaborn Cheat Sheet
+# def seaborn_cheat_sheet():
+#     st.header('Seaborn Cheat Sheet')
 
-    # Add Seaborn content here
-    st.write("Seaborn is a data visualization library based on Matplotlib.")
-    st.code("import seaborn as sns")
-    st.write("Create a scatter plot:")
-    st.code("sns.scatterplot(x='feature1', y='feature2', data=df)")
+#     # Add Seaborn content here
+#     st.write("Seaborn is a data visualization library based on Matplotlib.")
+#     st.code("import seaborn as sns")
+#     st.write("Create a scatter plot:")
+#     st.code("sns.scatterplot(x='feature1', y='feature2', data=df)")
 
-    # Customizing plots
-    st.subheader('Customizing Plots')
-    st.write("Customize Seaborn plots with various options.")
-    st.code("sns.set(style='whitegrid')")
-    st.code("sns.pairplot(df, hue='target')")
+#     # Customizing plots
+#     st.subheader('Customizing Plots')
+#     st.write("Customize Seaborn plots with various options.")
+#     st.code("sns.set(style='whitegrid')")
+#     st.code("sns.pairplot(df, hue='target')")
 
 
-# Add a section for Plotly Cheat Sheet
-def plotly_cheat_sheet():
-    st.header('Plotly Cheat Sheet')
+# # Add a section for Plotly Cheat Sheet
+# def plotly_cheat_sheet():
+#     st.header('Plotly Cheat Sheet')
 
-    # Add Plotly content here
-    st.write("Plotly is an interactive data visualization library.")
-    st.code("import plotly.express as px")
-    st.write("Create an interactive scatter plot:")
-    st.code("fig = px.scatter(df, x='feature1', y='feature2')")
-    st.code("fig.update_layout(title='Scatter Plot')")
+#     # Add Plotly content here
+#     st.write("Plotly is an interactive data visualization library.")
+#     st.code("import plotly.express as px")
+#     st.write("Create an interactive scatter plot:")
+#     st.code("fig = px.scatter(df, x='feature1', y='feature2')")
+#     st.code("fig.update_layout(title='Scatter Plot')")
 
-    # Interactive features
-    st.subheader('Interactive Features')
-    st.write("Add interactive elements to Plotly plots.")
-    st.code("fig.add_trace(go.Box(y=data))")
-    st.code("fig.update_xaxes(type='log')")
+#     # Interactive features
+#     st.subheader('Interactive Features')
+#     st.write("Add interactive elements to Plotly plots.")
+#     st.code("fig.add_trace(go.Box(y=data))")
+#     st.code("fig.update_xaxes(type='log')")
 
-# Add a section for TensorFlow Cheat Sheet
-def tensorflow_cheat_sheet():
-    st.header('TensorFlow Cheat Sheet')
+# # Add a section for TensorFlow Cheat Sheet
+# def tensorflow_cheat_sheet():
+#     st.header('TensorFlow Cheat Sheet')
 
-    # Add TensorFlow content here
-    st.write("TensorFlow is an open-source machine learning framework.")
-    st.code("import tensorflow as tf")
-    st.write("Create a neural network model:")
-    st.code("model = tf.keras.Sequential([tf.keras.layers.Dense(64, activation='relu', input_shape=(10,)), tf.keras.layers.Dense(1)])")
-    st.write("Compile and train the model:")
-    st.code("model.compile(optimizer='adam', loss='mean_squared_error')")
-    st.code("model.fit(X_train, y_train, epochs=10)")
+#     # Add TensorFlow content here
+#     st.write("TensorFlow is an open-source machine learning framework.")
+#     st.code("import tensorflow as tf")
+#     st.write("Create a neural network model:")
+#     st.code("model = tf.keras.Sequential([tf.keras.layers.Dense(64, activation='relu', input_shape=(10,)), tf.keras.layers.Dense(1)])")
+#     st.write("Compile and train the model:")
+#     st.code("model.compile(optimizer='adam', loss='mean_squared_error')")
+#     st.code("model.fit(X_train, y_train, epochs=10)")
 
-    # TensorBoard integration
-    st.subheader('TensorBoard Integration')
-    st.write("Visualize TensorFlow model training with TensorBoard.")
-    st.code("tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir='./logs')")
-    st.code("model.fit(X_train, y_train, epochs=10, callbacks=[tensorboard_callback])")
+#     # TensorBoard integration
+#     st.subheader('TensorBoard Integration')
+#     st.write("Visualize TensorFlow model training with TensorBoard.")
+#     st.code("tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir='./logs')")
+#     st.code("model.fit(X_train, y_train, epochs=10, callbacks=[tensorboard_callback])")
 
 # Call the cheat sheet functions for each library
 # matplotlib_cheat_sheet()
